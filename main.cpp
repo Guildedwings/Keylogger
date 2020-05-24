@@ -6,8 +6,6 @@ using namespace std;
 
 //key is the letter being pressed
 
-//Test to see in Github
-
 
 
 int Save(int _key, char *file){ //* converts the string into a char
