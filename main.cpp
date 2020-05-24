@@ -25,12 +25,11 @@ int main()
 {
     char myName[100];
 
-    char acUserName[100]; //A char array is the same as a string
+    char acUserName[100]; //A char array
     DWORD nUserName = sizeof(acUserName); //DWORD is double word, 32-bit integer
     if (GetUserName(acUserName, &nUserName)){
         strcpy(myName, acUserName);
-        strcat(myName, ".txt");
-        //puts(myName);
+        strcat(myName, ".txt"); //combine chars into one, the .txt will output to .txt file
         cout << myName << endl;
     }
 
